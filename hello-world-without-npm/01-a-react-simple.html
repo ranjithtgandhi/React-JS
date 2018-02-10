@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <title>Hello World - React Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+<body>
+    <div class="container">
+        <div id="root"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
+    <script type="text/javascript">
+    const rootElement = document.getElementById(
+      'root'
+    )
+    const element = React.createElement('h1', { //const element = document.createElement('h1')
+      className: 'container', //element.className = 'container'
+      children: 'Hello World',
+    })
+    console.log(element)
+    ReactDOM.render(element, rootElement)//rootElement.appendChild(element)
+    </script>
+</body>
+</html>

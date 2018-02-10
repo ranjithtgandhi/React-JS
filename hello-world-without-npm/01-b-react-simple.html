@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React Basic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>React Example Basic </h1>
+        
+        <div id="app01"></div>
+        <div id="app02"></div>
+           
+        
+    <div/>
+        <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.0/react-with-addons.js"></script>
+        <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.0/react-dom.js"></script>
+        <script>
+            ReactDOM.render( React.createElement('div', null, 'Hello World!'), document.getElementById('app01') );
+            ReactDOM.render( React.DOM.h1({id: "my-heading"}, "Hello World!"), document.getElementById('app02') );
+            
+        </script>
+</body>
+</html>
