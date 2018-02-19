@@ -1,0 +1,23 @@
+{
+  "name": "reactjsrouter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "RANJITH KUMAR",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.11.1"
+  }  
+}
