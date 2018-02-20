@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <title>React Example - Time</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <main></main>        
+    <div/>
+
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.0/react-with-addons.js"></script>
+        <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.0/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script>
+    	var showTime = function() {
+		    	var getTime = React.createElement(
+				    'div',null,				    
+				    React.createElement(
+				    	'h1',null,'Hi Developer!'
+				    ),
+				    React.createElement(
+				    	'h2',null,'Now Time is ',new Date().toLocaleTimeString(),'.'
+				    )
+		  		);
+				ReactDOM.render(
+					getTime,
+					document.querySelector('main')
+				);
+	    }
+	    setInterval(showTime, 1000);
+    </script>
+  </body>
+</html>
